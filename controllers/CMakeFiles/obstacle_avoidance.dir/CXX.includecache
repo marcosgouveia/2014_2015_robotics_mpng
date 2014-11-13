@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/100329047/2014_2015_robotics_mpng/controllers/obstacle_avoidance/MyRobot.cpp
+MyRobot.h
+/home/100329047/2014_2015_robotics_mpng/controllers/obstacle_avoidance/MyRobot.h
+
+/home/100329047/2014_2015_robotics_mpng/controllers/obstacle_avoidance/MyRobot.h
+iostream
+-
+cmath
+-
+webots/DifferentialWheels.hpp
+-
+
+/home/100329047/2014_2015_robotics_mpng/controllers/obstacle_avoidance/obstacle_avoidance.cpp
+MyRobot.h
+/home/100329047/2014_2015_robotics_mpng/controllers/obstacle_avoidance/MyRobot.h
+

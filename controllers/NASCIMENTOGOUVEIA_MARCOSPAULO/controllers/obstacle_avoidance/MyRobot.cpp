@@ -93,6 +93,33 @@ void MyRobot::run()
              _mode = FORWARD;
 
 
+            if (((ir14_val <100)&& (ir13_val <100)) && ((ir1_val <100)&& (ir2_val <100))){
+                _mode = FORWARD;
+            }
+            else{
+
+                 if (((ir14_val < 150)||(ir13_val < 150)) && ((ir1_val >150)|| (ir2_val >150))){
+                    _mode = TURN_RIGHT;
+                 }
+
+                 if ((ir0_val > 150)&&(ir15_val < 150)){
+                    _mode = TURN_RIGHTMORE;
+                 }
+
+                  if (((ir13_val > 150)|| (ir14_val > 150)) && ((ir1_val < 150)|| (ir2_val < 150))){
+                _mode = TURN_LEFT;
+                 }
+
+                  if ((ir15_val > 150)&&(ir0_val < 150)){
+                     _mode = TURN_LEFTMORE;
+                  }
+
+                 if ((ir15_val > 150)&&(ir0_val > 150)) {
+                _mode = OBSTACLE_AVOID;
+                }
+
+
+            }
         // Send actuators commands according to the mode
         switch (_mode){
             case STOP:
@@ -100,7 +127,7 @@ void MyRobot::run()
                 _right_speed = 0;
                 break;
             case FORWARD:
-                _left_speed = MAX_SPEED/10;
+                _left_speed = MAX_SPEED;
                 _right_speed = MAX_SPEED;
                 break;
             case TURN_LEFT:

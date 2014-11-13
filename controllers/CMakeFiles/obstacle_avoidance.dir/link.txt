@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/obstacle_avoidance.dir/obstacle_avoidance.cpp.o CMakeFiles/obstacle_avoidance.dir/MyRobot.cpp.o  -o obstacle_avoidance  -L/usr/local/webots/lib -rdynamic /usr/local/webots/lib/libController.so -lCppController -lm -Wl,-rpath,/usr/local/webots/lib 
